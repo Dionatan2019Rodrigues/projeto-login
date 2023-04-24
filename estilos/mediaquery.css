@@ -1,0 +1,44 @@
+@charset "UTF-8";
+
+@media screen and (max-width: 768px) {
+    section#imagem{
+        height: 35vh;
+    }
+}
+@media screen and (min-width: 768px) and (max-width: 992px) {
+    body,html{
+        background-image: linear-gradient(to top, var(--cor0), var(--cor-fundo));
+    }
+    main{
+        width: 80vw;
+        flex-direction: row;
+    }
+    section#imagem{
+        background-image: url('../imagens/claro.jpeg');
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+    footer{
+        border-color: var(--cor-fundo);
+    }
+}
+@media screen and (min-width: 992px) {
+    body,html {
+        background-image: linear-gradient(to top, var(--cor0), var(--cor-fundo));
+        align-items: center;
+        align-content: space-around;
+    }
+    main{
+        width: 80vw;
+        flex-direction: row-reverse;
+    }
+    section#imagem{
+        background-image: url('../imagens/claro.jpeg');
+        background-size: cover;
+        background-repeat: no-repeat;
+        width: 40vw;
+    }
+    footer{
+        border-color: var(--cor-fundo);
+    }
+}

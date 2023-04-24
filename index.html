@@ -4,12 +4,36 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="estilos/style.css">
+    <link rel="stylesheet" href="estilos/style.css" media="all">
+    <link rel="stylesheet" href="estilos/mediaquery.css">
     <title>Tela de Login</title>
 </head>
 <body>
-
-
+    <header>
+        <label class="switch">
+            <input type="checkbox" id="input-tema">
+            <span class="slider"></span>
+        </label>
+    </header>
+    <main>
+        <section id="imagem">
+            <!--Imagem inserida na CSS-->
+        </section>
+        <section id="formulario">
+            <h1>Login</h1>
+            <p>Seja bem-vindo(a) novamente. Faça login para acessar sua conta e poder fazer as configurações no seu ambiente.</p>
+            <form action="#" method="post" autocomplete="on">
+                <input type="email" placeholder="e-mail" class="dados">
+                <input type="password" placeholder="senha" class="dados">
+                <input type="button" value="Entrar" id="botao-entrada">
+                <a href="#" id="senha-esquecida">Esqueci minha senha</a>
+            </form>
+        </section>
+    </main> 
+    
+    <footer>
+        <p>&copy;Dionatan Rodrigues</p>
+    </footer>
     <script src="js/script.js"></script>
 </body>
 </html>
