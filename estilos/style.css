@@ -2,8 +2,16 @@
 
 :root{
     --cor-fundo:#9a9a9e;
+    --cor-sombra: rgba(0, 0, 0, 0.384);
+    /*paleta de cores*/
     --cor0: #9AD2D9;
     --cor1: #04BFAD;
+    /*paleta de cores dark*/
+    --cor-dark: #212121;
+    --cor-dark-suave: #5c5b5b;
+    /*demais cores utilizadas em 
+    pontos expecíficos não foram
+    pré definidas aqui*/
 }
 
 *{
@@ -33,7 +41,7 @@ main{
     background-color: white;
     width: 60vw;
     border-radius: 10px;
-    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.384);
+    box-shadow: 2px 2px 5px var(--cor-sombra);
     display: flex;
     flex-direction: column;
     overflow: hidden;
@@ -50,6 +58,9 @@ section#imagem{
 section#formulario{
     text-align: justify;
     padding: 20px;
+}
+section#formulario p{
+    text-indent: 30px;
 }
 h1{
     text-align: center;
@@ -102,7 +113,12 @@ footer{
 }
 /*tema dark*/
 body.dark{
-    background-color: #212121;
+    background-color: var(--cor-dark);
+    background-image: linear-gradient(to top, var(--cor-dark), var(--cor-fundo));
+}
+main.dark-mode{
+    background-color: var(--cor-dark-suave);
+    color: white;
 }
 .switch{
     position: relative;
