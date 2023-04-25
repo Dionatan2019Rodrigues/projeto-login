@@ -5,6 +5,7 @@
         height: 35vh;
     }
 }
+
 @media screen and (min-width: 768px) and (max-width: 992px) {
     body,html{
         background-image: linear-gradient(to top, var(--cor0), var(--cor-fundo));
@@ -22,6 +23,7 @@
         border-color: var(--cor-fundo);
     }
 }
+
 @media screen and (min-width: 992px) {
     body,html {
         background-image: linear-gradient(to top, var(--cor0), var(--cor-fundo));
